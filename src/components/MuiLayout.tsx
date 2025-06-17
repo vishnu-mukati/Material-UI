@@ -1,7 +1,8 @@
-import { Box, Stack, Divider, Grid } from "@mui/material";
+import { Box, Stack, Divider, Grid, Paper } from "@mui/material";
 const MuiLayout = () => {
     return (
-        <>
+        // the paper component is used like the contact forms etc
+        <Paper sx={{padding:'32px'}} elevation={6}>
             <Stack
                 sx={{ border: "1px solid" }}
                 direction="row"
@@ -78,7 +79,7 @@ const MuiLayout = () => {
                     </Box>
                 </Grid>
             </Grid>
-        </>
+        </Paper>
     );
 };
 
