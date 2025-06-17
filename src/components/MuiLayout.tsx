@@ -30,26 +30,51 @@ const MuiLayout = () => {
                     p={2}
                 ></Box>
             </Stack>
-            <Grid container my={4}>
+            <Grid container my={4} rowSpacing={2} columnSpacing={1}>
                 {/* it is 12 column grid layout */}
-                <Grid size={{ xs: 12,sm:6}}>
+                <Grid size={{ xs:6}}>
                     <Box bgcolor="primary.light" p={2}>
                         Item 1
                     </Box>
                 </Grid>
-                <Grid size={{ xs: 12,sm:6}}>
+                <Grid size={{ xs: 6}}>
                     <Box bgcolor="primary.light"  p={2}>
                         Item 2
                     </Box>
                 </Grid>
-                <Grid size={{ xs: 12,sm:6}}>
+                <Grid size={{ xs:6}}>
                     <Box bgcolor="primary.light" p={2}>
                         Item 3
                     </Box>
                 </Grid>
-                <Grid size={{ xs: 12,sm:6}}>
+                <Grid size={{ xs: 6}}>
                     <Box bgcolor="primary.light"  p={2}>
                         Item 4
+                    </Box>
+                </Grid>
+            </Grid>
+            <Grid container my={4} spacing={2}>
+                {/* it is 12 column grid layout */}
+                {/* the grow is used for autolayout each four is taking equal */}
+                <Grid size={{ xs:'grow'}}>
+                    <Box bgcolor="primary.light" p={2}>
+                        Item 5
+                    </Box>
+                </Grid>
+                {/* auto is taking only the necessary width */}
+                <Grid size={{ xs: 'auto'}}>
+                    <Box bgcolor="primary.light"  p={2}>
+                        Item 6
+                    </Box>
+                </Grid>
+                <Grid size={{ xs:'grow'}}>
+                    <Box bgcolor="primary.light" p={2}>
+                        Item 7
+                    </Box>
+                </Grid>
+                <Grid size={{ xs:'grow'}}>
+                    <Box bgcolor="primary.light"  p={2}>
+                        Item 8
                     </Box>
                 </Grid>
             </Grid>
